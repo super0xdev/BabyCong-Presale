@@ -1,0 +1,46 @@
+.mycontainer {
+    text-align: center;
+}
+
+.progress {
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-striped .progress-bar {
+    background-color: #00ACFFD0;
+    width: 50%;
+    background-image: linear-gradient(45deg, #00ACFF 10%,
+            transparent 10%, transparent 20%,
+            #00ACFF 20%, #00ACFF 30%,
+            transparent 30%, transparent 40%,
+            #00ACFF 40%, #00ACFF 50%,
+            transparent 50%, transparent 60%,
+            #00ACFF 60%, #00ACFF 70%,
+            transparent 70%, transparent 80%,
+            #00ACFF 80%, #00ACFF 90%,
+            transparent 90%, transparent 100%,
+            #00ACFF 100%, transparent);
+    animation: progressAnimationStrike 2s;
+}
+
+.progress-bar {
+    height: 18px;
+    background-color: #ee303c;
+    border-radius: 12px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+
+@keyframes progressAnimationStrike {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 50%
+    }
+}
